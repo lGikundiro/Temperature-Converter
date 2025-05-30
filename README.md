@@ -3,10 +3,15 @@ A responsive Flutter application for converting temperatures between Fahrenheit 
 **Features**
 
 Fahrenheit to Celsius and Celsius to Fahrenheit conversions
+
 User input field for entering temperature
+
 Conversion result displayed instantly and clearly
+
 Conversion history (most recent at the top)
+
 Responsive design for all device sizes and orientations
+
 Modern UI with Material Design, custom colors, and shadows
 
 
