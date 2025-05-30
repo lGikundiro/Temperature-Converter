@@ -1,50 +1,53 @@
 # Temperature Converter App
 
-## Overview
-The Temperature Converter App is a Flutter application that allows users to convert temperatures between Fahrenheit and Celsius. Users can select the conversion type, input a temperature value, and view the converted result along with a history of previous conversions.
+A responsive Flutter application for converting temperatures between Fahrenheit and Celsius. The app features a modern UI with green and yellow color themes, box shadows, and rounded corners for a delightful user experience. It works seamlessly in both portrait and landscape orientations.
 
 ## Features
-- Select between Fahrenheit-to-Celsius and Celsius-to-Fahrenheit conversions.
-- Input field for entering temperature values.
-- Convert button to trigger the conversion process.
-- Display of conversion results rounded to two decimal places.
-- History of conversions to track previous calculations.
+- **Fahrenheit to Celsius and Celsius to Fahrenheit conversions**
+- **User input field** for entering temperature
+- **Conversion result** displayed instantly and clearly
+- **Conversion history** (most recent at the top)
+- **Responsive design** for all device sizes and orientations
+- **Modern UI** with Material Design, custom colors, and shadows
 
-## Project Structure
+## Code Structure
 ```
-temperature_converter_app
-├── lib
-│   ├── main.dart                  # Entry point of the application
-│   ├── screens
-│   │   └── home_screen.dart       # Main interface for the app
-│   ├── widgets
-│   │   ├── conversion_selector.dart # Widget for selecting conversion type
-│   │   ├── temperature_input.dart   # Widget for temperature input
-│   │   ├── convert_button.dart       # Button to trigger conversion
-│   │   └── history_list.dart         # Widget to display conversion history
-│   └── models
-│       └── conversion_history.dart   # Model for managing conversion history
-├── test
-│   └── widget_test.dart             # Widget tests for the application
-├── pubspec.yaml                     # Configuration file for the Flutter project
-└── README.md                        # Documentation for the project
+lib/
+  main.dart         # Main application code, all UI and logic
+
+test/
+  widget_test.dart  # Widget test for main app UI and conversion logic
+
+pubspec.yaml        # Project dependencies and configuration
 ```
 
-## Setup Instructions
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Run `flutter pub get` to install the necessary dependencies.
-4. Use an emulator or a physical device to run the app with `flutter run`.
+- All logic and UI are in `lib/main.dart`.
+- The main widget is `TemperatureConverterApp`, which sets up the theme and home screen.
+- The `TemperatureConverterScreen` stateful widget manages user input, conversion logic, and history.
+- Helper widgets (as methods) are used for input, output, conversion selector, and history list.
 
-## Usage
-- Launch the app on your device.
-- Select the desired conversion type (Fahrenheit to Celsius or Celsius to Fahrenheit).
-- Enter the temperature value in the input field.
-- Press the "Convert" button to see the converted temperature.
-- View the conversion history displayed below the input field.
+## How to Use
+1. **Enter a temperature** in the input field.
+2. **Select the conversion direction** (Fahrenheit to Celsius or Celsius to Fahrenheit).
+3. **Tap the CONVERT button** to see the result.
+4. The **converted value** appears in the output field.
+5. Each conversion is added to the **history list** below, with the most recent at the top.
+6. The app automatically adapts to portrait and landscape modes for the best experience.
 
-## Contribution
-Feel free to contribute to the project by submitting issues or pull requests. Your feedback and suggestions are welcome!
+## Running the App
+1. Make sure you have [Flutter installed](https://docs.flutter.dev/get-started/install).
+2. Clone this repository and open the project folder.
+3. Run `flutter pub get` to install dependencies.
+4. Run the app on an emulator, device, or web:
+   - For mobile: `flutter run`
+   - For web: `flutter run -d chrome`
 
-## License
-This project is open-source and available under the MIT License.
+## Testing
+- Run `flutter test` to execute the included widget test.
+
+## Screenshots
+- Portrait and landscape layouts are supported and visually consistent.
+
+---
+
+**Enjoy converting temperatures with style!**
